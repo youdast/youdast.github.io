@@ -41,7 +41,7 @@
         <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#skills"><i class="bx bx-bar-chart"></i> <span>Skill</span></a></li>
-        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bx bx-file-blank"></i> <span>Portfolio</span></a></li>
         <!-- <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li> -->
       </ul>
     </nav><!-- .nav-menu -->
@@ -52,12 +52,10 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Yuda Satria</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer"></span></p>
+      <p>I'm <span class="typed" data-typed-items="Software Engineer, System Analyst, Software Developer, Freelancer"></span></p>
       <div class="social-links">
-        <a href="https://twitter.com/yudasign" class="twitter" target="_BLANK" rel="noopenner norefferer"><i class="bx bxl-twitter"></i></a>
-        <a href="https://web.facebook.com/devilblue151" class="facebook" target="_BLANK" rel="noopenner norefferer"><i class="bx bxl-facebook"></i></a>
         <a href="https://www.instagram.com/yudasign/" class="instagram" target="_BLANK" rel="noopenner norefferer"><i class="bx bxl-instagram"></i></a>
-        <a href="mailto:yudasatria@codeworqs.com" class="google-plus" target="_BLANK" rel="noopenner norefferer"><i class="bx bx-envelope"></i></a>
+        <a href="mailto:sycode.id@gmail.com" class="google-plus" target="_BLANK" rel="noopenner norefferer"><i class="bx bx-envelope"></i></a>
         <a href="https://www.linkedin.com/in/yudasatria/" class="linkedin" target="_BLANK" rel="noopenner norefferer"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
@@ -79,30 +77,23 @@
             <img src="assets/img/profile-img.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Application Developer.</h3>
+            <h3>Software Engineer.</h3>
             <p class="font-italic">
               Writing well designed, testable, efficient code by using best software development practices.
             </p>
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 04 April 1998</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> yudasatria.codeworqs.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Jakarta, Indonesia</li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> <?=date_diff(date_create('04-04-1998'), date_create(date('Y-m-d')))->format('%y');?></li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelor</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> yudasatria@codeworqs.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> <a href="https://codeworqs.com/" target="_BLANK" rel="noopener noreferrer">Available</a></li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Name:</strong> Yuda Satria</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> <span id="age"></span> years</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelor of Informatics Engineering</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Professional Experience:</strong> <span id="experience"></span> years</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> sycode.id@gmail.com</li>
                 </ul>
               </div>
             </div>
             <p>
-              I am passionate about my work.
-              I am a disciplined person, adaptable and happy to learn new things, I can work individually or in groups. I always try to work optimally for each of my obligations.
+              I am passionate about my work. I am able to analyze business or user needs and design technical solutions that suit those needs through to the development process. I can work individually or in groups. I am proficient in Golang and PHP programming languages.
             </p>
           </div>
         </div>
@@ -117,7 +108,7 @@
 
         <div class="section-title">
           <h2>Skills</h2>
-          <p>Application developers need a combination of graphic design skills and technical computer skills to enable us to create specific designs. In addition to looking good, apps need to be functional and secure. The application developer is responsible for creating applications that meet the requirements of the employer or client.</p>
+          <p>Software Engineer need a combination of technical skills, soft skills, continuous learning, and a strong work ethic to enable us to create specific app. In addition to looking good, apps need to be functional and secure. The Software Engineer is responsible for creating applications that meet the requirements of the employer or client.</p>
         </div>
 
         <div class="row skills-content">
@@ -151,69 +142,13 @@
     </section>
     <!-- End Skills Section -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>“Doing the best at this moment puts you in the best place for the next moment.” – Oprah Winfrey</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Certificate</h3>
-            <div class="resume-item pb-0">
-              <h4>Oracle Database 11g - SQL Fundamental</h4>
-              <h5>2018</h5>
-              <p><em>PT Belogix Indonesia, Bandung, Indonesia</em></p>
-              <p>Pass, Score : A</p>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Informatics Engineering</h4>
-              <h5>2015 - 2019</h5>
-              <p><em>Universitas Komputer Indonesia, Bandung, Indonesia</em></p>
-              <p>Best Thesis Research</p>
-            </div>
-            <div class="resume-item">
-              <h4>Computer and Network Engineering</h4>
-              <h5>2012 - 2015</h5>
-              <p><em>SMK Negeri 2 Baleendah, Bandung, Indonesia</em></p>
-              <p>Chairman of OSIS</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Front-end Developer</h4>
-              <h5>2020 - Present</h5>
-              <p><em>PT Bank Rakyat Indonesia Tbk (PT MII Vendor), Jakarta, Indonesia</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Programmer</h4>
-              <h5>2019 - 2020</h5>
-              <p><em>PT Electronic Data Interchange Indonesia (Subsidiary of PT Pelabuhan Indonesia II), Jakarta, Indonesia</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Job Training</h4>
-              <h5>2018</h5>
-              <p><em>Trans Studio Bandung, Bandung, Indonesia</em></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- End Resume Section -->
-
     <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio section-bg">
+    <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Portfolio</h2>
+          <p>“Doing the best at this moment puts you in the best place for the next moment.” – Oprah Winfrey</p>
         </div>
 
         <div class="row">
@@ -358,7 +293,7 @@
         </div>
 
       </div>
-    </section> -->
+    </section>
     <!-- End Portfolio Section -->
 
   </main><!-- End #main -->
@@ -368,10 +303,8 @@
     <div class="container">
       <h3>Yuda Satria</h3>
       <div class="social-links">
-        <a href="https://twitter.com/yudasign" class="twitter" target="_BLANK" rel="noopenner norefferer"><i class="bx bxl-twitter"></i></a>
-        <a href="https://web.facebook.com/devilblue151" class="facebook" target="_BLANK" rel="noopenner norefferer"><i class="bx bxl-facebook"></i></a>
         <a href="https://www.instagram.com/yudasign/" class="instagram" target="_BLANK" rel="noopenner norefferer"><i class="bx bxl-instagram"></i></a>
-        <a href="mailto:yudasatria@codeworqs.com" class="google-plus" target="_BLANK" rel="noopenner norefferer"><i class="bx bx-envelope"></i></a>
+        <a href="mailto:sycode.id@gmail.com" class="google-plus" target="_BLANK" rel="noopenner norefferer"><i class="bx bx-envelope"></i></a>
         <a href="https://www.linkedin.com/in/yudasatria/" class="linkedin" target="_BLANK" rel="noopenner norefferer"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
@@ -398,6 +331,31 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+   <script>
+    $('#age').html(age("1998-04-04"))
+    $('#experience').html(age("2019-01-01"))
+
+    function age(start) {
+      let tanggalLahir = new Date(start);
+
+      // Dapatkan tanggal hari ini
+      let hariIni = new Date();
+
+      // Hitung perbedaan tahun antara tanggal hari ini dan tanggal lahir
+      let perbedaanTahun = hariIni.getFullYear() - tanggalLahir.getFullYear();
+
+      // Periksa apakah tanggal hari ini masih sebelum hari ulang tahun dalam tahun ini
+      if (
+        hariIni.getMonth() < tanggalLahir.getMonth() ||
+        (hariIni.getMonth() === tanggalLahir.getMonth() &&
+          hariIni.getDate() < tanggalLahir.getDate())
+      ) {
+        perbedaanTahun--;
+      }
+      return perbedaanTahun;
+    }
+  </script>
 
 </body>
 
