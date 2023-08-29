@@ -222,6 +222,7 @@
         type: "app",
         description: "Stroberi Tagihan is a website-based platform from BRI that is used to make it easier for companies, customers and market managers to monitor and evaluate invoices.",
         url: "https://tagihan.stroberi.id/",
+        iframe: false,
         image: "portfolio-1.png"
       },
       {
@@ -229,6 +230,7 @@
         type: "app",
         description: "Panen is a BRI application for mapping planting and harvesting activities in a commodity-based area, where farmer extension workers can input planting and harvesting realization data from agricultural land in a village, so that later the Pemprov can monitor land from available reports and statistics.",
         url: "https://panen.bri.co.id/",
+        iframe: false,
         image: "portfolio-2.png"
       },
       {
@@ -236,6 +238,7 @@
         type: "web",
         description: "Pasar.id is an intermediary platform that is used to bring together traders in a market with buyers to transact online.",
         url: "https://pasar.id/",
+        iframe: true,
         image: "portfolio-3.png"
       },
       {
@@ -243,6 +246,7 @@
         type: "web",
         description: "PadiChain is a commodity-based platform for the Padi ecosystem that is provided with the aim of providing solutions to improve rice quality & harvest quantity as well as digitizing the onboarding process of farmers involving the role of extension workers. This platform is a supporting facility provided to RMU / BRI customer cooperatives, especially extension workers to facilitate their business processes which are still done manually.",
         url: "https://padichain.id/",
+        iframe: false,
         image: "portfolio-4.png"
       },
       {
@@ -250,6 +254,7 @@
         type: "web",
         description: "Stroberi Monitoring is a website for monitoring the Stroberi Tagihan and Stroberi Kasir applications as well as a help center portal.",
         url: "https://monitoring.stroberi.id/",
+        iframe: false,
         image: "portfolio-5.png"
       },
       {
@@ -257,6 +262,7 @@
         type: "web",
         description: "Application from Pelindo Group",
         url: "https://pelindo.co.id/",
+        iframe: true,
         image: "portfolio-6.png"
       },
       {
@@ -264,6 +270,7 @@
         type: "web",
         description: "SMRMS is an application for maintenance and monitoring of containers.",
         url: "javascript:void(0);",
+        iframe: false,
         image: "portfolio-7.png"
       },
       {
@@ -271,6 +278,7 @@
         type: "app",
         description: "E-Office IPC TPK is a document and task management system enhanced through digital technology.",
         url: "https://eoffice.ipctpk.co.id/",
+        iframe: false,
         image: "portfolio-8.png"
       },
       {
@@ -278,6 +286,7 @@
         type: "web",
         description: "indonesiaport.co.id is a corporate website for PT Pelindo II",
         url: "https://indonesiaport.co.id/",
+        iframe: false,
         image: "portfolio-9.png"
       },
       {
@@ -285,6 +294,7 @@
         type: "web",
         description: "Magnific Indonesia is a website for photo contests that contains registration, exhibitions and curation for the magnific Indonesia community.",
         url: "https://magnificindonesia.com",
+        iframe: false,
         image: "portfolio-10.png"
       },
       {
@@ -292,6 +302,7 @@
         type: "web",
         description: "Application for project risk management using the house of risk method.",
         url: "javascript:void(0);",
+        iframe: false,
         image: "portfolio-11.png"
       },
       {
@@ -299,6 +310,7 @@
         type: "web",
         description: "Wedding invitation",
         url: "javascript:void(0);",
+        iframe: false,
         image: "portfolio-12.png"
       },
       {
@@ -306,6 +318,7 @@
         type: "web",
         description: "Wedding invitation",
         url: "javascript:void(0);",
+        iframe: false,
         image: "portfolio-13.png"
       },
       {
@@ -313,6 +326,7 @@
         type: "web",
         description: "Wedding invitation",
         url: "javascript:void(0);",
+        iframe: false,
         image: "portfolio-14.png"
       },
     ];
@@ -325,12 +339,14 @@
                 <h4>${element.name}</h4>
                 <p>${element.description}</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/${element.image}" data-gall="portfolioGallery" class="venobox" title="${element.name}"><i class='bx bxs-file-png'></i></a>
-                  <a href="${element.url}" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
+                  <a href="assets/img/portfolio/${element.image}" data-gall="portfolioGallery" class="venobox" title="${element.name}"><i class='bx bxs-file-png'></i></a>`;
+                  if (element.iframe) {
+    portoHTML +=  `<a href="${element.url}" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>`;
+                  }
+  portoHTML +=  `</div>
               </div>
             </div>
-          </div>`
+          </div>`;
     });
     $('.portfolio-container').html(portoHTML);
 
